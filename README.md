@@ -1,5 +1,5 @@
 # gravity-lua
 
-a gravity simulator made on love2D, a game framework for Lua. 
+a gravity simulator made on love2D, a game framework for Lua. (work in progress)
 
-![](name-of-giphy.gif)
+![](grav_eq.gif)
