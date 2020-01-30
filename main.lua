@@ -15,7 +15,7 @@ function euclideanDistance(x1, y1, x2, y2)
     return dist
 end
 
-G = 3.14
+G = 2
 x = 20
 y = 50
 vx = 3
