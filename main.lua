@@ -15,10 +15,10 @@ function euclideanDistance(x1, y1, x2, y2)
     return dist
 end
 
-G = 5
+G = 3.14
 x = 20
 y = 50
-vx = 5
+vx = 3
 vy = 0
 function love.draw()
     gravity = G * (1000/(euclideanDistance(x, y, 381, 295))^2)
