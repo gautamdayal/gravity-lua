@@ -10,16 +10,18 @@ function love.update(dt)
 
 end
 
--- function euclideanDistance(x1, y1, x2, y2)
---     local dist =
--- end
+function euclideanDistance(x1, y1, x2, y2)
+    local dist = math.sqrt((y2 - y1)^2 + (x2-x1)^2)
+    return dist
+end
 
 gravity = 1
-x = 0
-y = 0
-vx = 0.5
+x = 20
+y = 100
+vx = 2
 vy = 0
 function love.draw()
+    gravity = 1000/(euclideanDistance(x, y, 381, 295))^2
     x = x + vx
     y = y + vy
 
@@ -42,5 +44,5 @@ function love.draw()
     mx, my = love.mouse.getPosition()
 
     love.graphics.print('Mouse x = ' .. tostring(mx) .. ' Mouse y = ' .. tostring(my) ..
-    ' Velocity x = ' .. tostring(vx) .. ' Velocity y = ' .. tostring(vy))
+    ' Velocity x = ' .. tostring(vx) .. ' Velocity y = ' .. tostring(vy) .. ' Gravity = ' .. tostring(gravity))
 end
