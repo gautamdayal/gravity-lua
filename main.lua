@@ -14,7 +14,7 @@ end
 --     local dist =
 -- end
 
-gravity = 0.1
+gravity = 1
 x = 0
 y = 0
 vx = 0.5
