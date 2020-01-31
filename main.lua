@@ -15,13 +15,19 @@ function euclideanDistance(x1, y1, x2, y2)
     return dist
 end
 
-G = 2
-x = 20
-y = 50
-vx = 3
+G = 2.1
+x = 60
+y = 10
+vx = 3.4
 vy = 0
 function love.draw()
-    gravity = G * (1000/(euclideanDistance(x, y, 381, 295))^2)
+
+    if love.keyboard.isDown("r") then
+        x = 60
+        y = 10
+    end
+
+    gravity = G * (1350/(euclideanDistance(x, y, 381, 295))^2)
     x = x + vx
     y = y + vy
 
