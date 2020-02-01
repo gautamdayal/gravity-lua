@@ -18,7 +18,7 @@ end
 G = 2.1
 x = 60
 y = 10
-vx = 3.4
+vx = 3.48
 vy = 0
 function love.draw()
 
